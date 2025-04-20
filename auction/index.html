@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/068b785dc2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav_logo">
+                <a href="/main-page/index.html">ExoticDrive</a>
+            </div>
+            <div class="nav_links">
+                <ul>
+                    <li class="dropdown">
+                        <a href="#cars" onclick="onClick()">Vehicles</a>
+                        <div class="dropdown_content_wrapper">
+                            <div class="dropdown_content">
+                                <div class="dropdown_title">
+                                    Explore
+                                </div>
+                                <div class="navbar_car_layout">
+                                    <div class="navbar_car" onclick="goToBmw()">
+                                        <img src="/Assets/images/bmw.png">
+                                        Bmw
+                                    </div>
+                                    <div class="navbar_car" onclick="goToMercedes()">
+                                        <img src="/Assets/images/mercedes-amg.png">
+                                        Mercedes
+                                    </div>
+                                    <div class="navbar_car">
+                                        <img src="/Assets/images/230110_Ferrari-LaFerrari-15.jpg">
+                                        Ferrari
+                                    </div>
+                                    <div class="navbar_car">
+                                        <img src="/Assets/images/lamborghini.png">
+                                        Lamborghini
+                                    </div>
+                                    <div class="navbar_car">
+                                        <img src="/Assets/images/porche.png">
+                                        Porche
+                                    </div>
+                                    <div class="navbar_car">
+                                        <img src="/Assets/images/rolls.png">
+                                        Rolls Royce
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="/auction/index.html">Auction</a></li>
+                    <li><a href="/contact/index.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="profile_language">
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div onclick="signIn()">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>        
+        <section class="ad_context_sect">
+            <div class="ad_context">
+                <div class="auction_title">
+                    <h1>Auction</h1>
+                    <p>Keep an eye on the current auctions and buy the car you want at the best price</p>
+                </div>
+                <div class="ad_context_img">
+                    <img src="/Assets/images/auction-background-image.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="auction_sect">
+            <div class="search_div">
+                <input type="search" id="searchInput" placeholder="Search for a car..." />
+            </div>
+            <div class="auction_container_wrapper">
+                <div id="auction_container">
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="go_up" onclick="scrollToTop()" id="go_up">
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
+        <div class="footer_container">
+            <div class="footer_context">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Explanations</a>
+                <a href="/contact/index.html">Contact</a>
+            </div>
+            <div class="visit_us_on">
+                <div>
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

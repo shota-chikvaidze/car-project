@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/068b785dc2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+            <nav class="navbar">
+                <div class="nav_logo">
+                    <a href="#">ExoticDrive</a>
+                </div>
+                <div class="nav_links">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="#cars" onclick="onClick()">Vehicles</a>
+                            <div class="dropdown_content_wrapper">
+                                <div class="dropdown_content">
+                                    <div class="dropdown_title">
+                                        Explore
+                                    </div>
+                                    <div class="navbar_car_layout">
+                                        <div class="navbar_car" onclick="goToBmw()">
+                                            <img src="/Assets/images/bmw.png">
+                                            Bmw
+                                        </div>
+                                        <div class="navbar_car" onclick="goToMercedes()">
+                                            <img src="/Assets/images/mercedes-amg.png">
+                                            Mercedes
+                                        </div>
+                                        <div class="navbar_car">
+                                            <img src="/Assets/images/230110_Ferrari-LaFerrari-15.jpg">
+                                            Ferrari
+                                        </div>
+                                        <div class="navbar_car">
+                                            <img src="/Assets/images/lamborghini.png">
+                                            Lamborghini
+                                        </div>
+                                        <div class="navbar_car">
+                                            <img src="/Assets/images/porche.png">
+                                            Porche
+                                        </div>
+                                        <div class="navbar_car">
+                                            <img src="/Assets/images/rolls.png">
+                                            Rolls Royce
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="/auction/index.html">Auction</a></li>
+                        <li><a href="/contact/index.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="profile_language">
+                    <div>
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div onclick="signIn()">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    <main>
+        <section class="main_sect_1">
+            <div class="exotic_car_wrapper">
+                <video playsinline muted autoplay loop class="exotic_car">
+                    <source src="/Assets/videos/Introducing the Ferrari F80 [tYSo0LsHhvo].f137.mp4">
+                </video>
+                <div class="button_sell_your_car">
+                    <button onclick="scrollToSection('featured_sect')">Explore Cars</button>
+                    <button onclick="scrollToSellSect('sell_Your_car')" id="sell_car_btn">Sell Your Car</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="carousel_wrapper_section">
+            
+            <div class="carousel_header">
+                <h2>Popular Brands</h2>
+              </div>
+            
+
+            <div class="carousel_sect">
+                <button id="prev_btn">←</button>
+                <div class="carousel_track_wrapper">
+                  <div class="carousel_track" id="carousel_track">
+                    <div class="product_1">
+                        <div class="product_img">
+                            <img src="/Assets/images/ferrari-laferari.png" onclick="ferrariDetails()">
+                        </div>
+                        <div class="carousel_div_title">
+                            <h1>Ferrari</h1>
+                        </div>
+                        <div class="carousel_div_btn">
+                            <button onclick="ferrariDetails()">View page</button>
+                            <button>Explore</button>
+                        </div>
+                    </div>
+                    <div class="product_1">
+                        <div class="product_img">
+                            <img src="/Assets/images/bmwww.png"onclick="bmw_details()">
+                        </div>
+                        <div class="carousel_div_title">
+                            <h1>BMW</h1>
+                        </div>
+                        <div class="carousel_div_btn">
+                            <button onclick="bmw_details()">View details</button>
+                            <button>Explore</button>
+                        </div>
+                    </div>
+                    <div class="product_1">
+                        <div class="product_img">
+                            <img src="/Assets/images/mercedes-amg.png" onclick="mercedesDetails()">
+                        </div>
+                        <div class="mercedes_div_title">
+                            <h1>Merscedes</h1>
+                        </div>
+                        <div class="carousel_div_btn">
+                            <button onclick="mercedesDetails()">View details</button>
+                            <button>Explore</button>
+                        </div>
+                    </div>
+                    <div class="product_1">
+                        <div class="product_img">
+                            <img src="/Assets/images/lamborghini.png" onclick="lamborghiniDetails()">
+                        </div>
+                        <div class="carousel_div_title">
+                            <h1>Lamborghini</h1>
+                        </div>
+                        <div class="carousel_div_btn">
+                            <button onclick="lamborghiniDetails()">View details</button>
+                            <button>Explore</button>
+                        </div>
+                    </div>
+                    <div class="product_1">
+                        <div class="product_img">
+                            <img src="/Assets/images/porche.png" onclick="porcheDetails()">
+                        </div>
+                        <div class="porche_div_title">
+                            <h1>Porsche</h1>
+                        </div>
+                        <div class="carousel_div_btn">
+                            <button onclick="porcheDetails()">View details</button>
+                            <button>Explore</button>
+                        </div>
+                    </div>
+                    <div class="product_1">
+                        <div class="product_img">
+                            <img src="/Assets/images/rolls.png" onclick="rollsDetails()">
+                        </div>
+                        <div class="carousel_div_title">
+                            <h1>Rolls-Royce</h1>
+                        </div>
+                        <div class="carousel_div_btn">
+                            <button onclick="rollsDetails()">View details</button>
+                            <button>Explore</button>
+                        </div>
+                    </div>
+                    <div class="product_1">
+                        <div class="product_img">
+                            <img src="/Assets/images/audi.avif" onclick="audiDetails()">
+                        </div>
+                        <div class="carousel_div_title">
+                            <h1>Audi</h1>
+                        </div>
+                        <div class="carousel_div_btn">
+                            <button onclick="audiDetails()">View details</button>
+                            <button>Explore</button>
+                        </div>
+                    </div>
+                    <div class="product_1">
+                        <div class="product_img_lexus">
+                            <img src="/Assets/images/lexus-lx-png.png" onclick="lexusDetails()">
+                        </div>
+                        <div class="carousel_div_title">
+                            <h1>Lexus</h1>
+                        </div>
+                        <div class="carousel_div_btn">
+                            <button onclick="lexusDetails()">View details</button>
+                            <button>Explore</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <button id="next_btn">→</button>
+            </div>
+        </section>
+
+        <section class="video_design">
+            <video playsinline muted autoplay loop class="">
+                <source src="/Assets/videos/ad.mp4">
+            </video>
+        </section>
+          
+        <section class="featured_sect" id="featured_sect">
+            <div class="featured_title">Featured listings</div>
+            <div id="featured_container" class="featured_container">
+
+            </div>
+        </section>
+
+        <section class="main_auction_sect"> 
+            <div class="main_auction_container">
+                <div class="main_auction_context_wrapper">
+                    <div class="auction_img_wrapper">
+                        <img src="/Assets/images/svg.png">
+                    </div>
+                    <div class="auction_text">
+                        <p>Purchase car on Auction</p>
+                    </div>
+                    <div class="auction_text_second">
+                        <p>Choose a car and buy it at the desired price</p>
+                    </div>
+                </div>
+                <div class="main_auction_car_card">
+                    <div class="link_to_auction">
+                        <a href="/auction/index.html">See all</a>
+                    </div>
+                    <div id="auction_cars_on_main">
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <section class="sell_your_own_car" id="sell_Your_car" >
+            <div class="form_wrapper">
+                <div class="form_context">
+                    <h1>Sell your Car</h1>
+                    <p>List your exotic ride and get it seen by the right buyers.</p>
+                </div>
+                <form class="form">
+                    <div class="input_upload_img_wrapper">
+                        <div class="sell_car_input_div">
+                            <input type="text" placeholder="Car brand">    
+                            <input type="text" placeholder="Model">    
+                            <input type="text" placeholder="Year">    
+                            <input type="text" placeholder="price (USD)">
+                        </div>
+                        <div class="form_upload_img">
+                            <i class="fa-regular fa-image"></i>
+                            <h1>Upload Image</h1>
+                        </div>
+                    </div>
+                    <div class="form_submit">
+                        <button >Submit Listing</button>
+                    </div> 
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_site_name" onclick="mainPage()">
+                <img src="/Assets/images/logo.png" alt="">
+                <h1>ExoticDrive</h1>
+            </div>
+            <div class="Quick_links">
+                <a href="#">About Us</a>
+                <a href="/contact/index.html">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+                <div>© 2025 Exotic Motors</div>
+            </div>
+            <div class="social_icons">
+                <h1>Visit us on</h1>
+                <div class="span_wrapper">
+                    <span>Facebook</span>
+                    <span>X</span>
+                    <span>Intagram</span>
+                    <span>Youtube</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

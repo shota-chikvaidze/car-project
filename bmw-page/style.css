@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    position: relative;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: #242a30;
+}
+
+.go_back_btn a {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid #363636;
+    padding: 10px 40px;
+    border-radius: 40px;
+    color: #242a30;
+}
+
+.section_1 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bmw_explained {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bmw_explained h3 span {
+    font-weight: 600;
+}
+
+.bmw_explained h3  {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.bmw_explained h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    width: 60%;
+}
+
+.bmw_explained button {
+    background-color: #1b69d4;
+    padding: 15px 35px;
+    width: 200px;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.bmw_video {
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+}
+
+.section_2 {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.bmw_wallpaper_1 img {
+    object-fit: contain;
+    width: 700px;
+    height: 422px;
+    display: flex;
+    cursor: pointer;
+}
+
+.bmw_wallpaper_2 img {
+    object-fit: contain;
+    width: 700px;
+    height: 430px;
+    display: flex;
+    cursor: pointer;
+}
+
+.bmw_wallpaper_1 h3 {
+    font-size: 18px;
+    color: #242a30;
+}
+
+.bmw_wallpaper_1 p {
+    font-size: 22px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+
+.bmw_wallpaper_2 h1 {
+    color: #242a30;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.section_3 {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.context {
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.context h3 {
+    font-size: 20px;
+}
+
+.context p {
+    font-size: 24px;
+}
+
+footer {
+    background-color: #262626;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.quick_links, .more_bmw_websites, .bmw_com, .Visit_us {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    gap: 15px;
+}
+
+.quick_links a, .more_bmw_websites a, .bmw_com a, .Visit_us a{
+    color: #b8b2b2;
+}
+
+.quick_links h1, .more_bmw_websites h1, .bmw_com h1, .Visit_us h1{
+    color: #fff;
+    font-size: 16px;
+    border-bottom: 1px solid #363636;
+    padding-bottom: 15px;
+}

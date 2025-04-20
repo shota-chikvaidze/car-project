@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+.go_back_btn a {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid #363636;
+    padding: 10px 40px;
+    border-radius: 40px;
+    color: #242a30;
+    z-index: 999;
+}
+
+.sign_in {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.sign_in_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+form {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.sign_in_input input {
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.sign_in_input label {
+    color: #625e6a;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sign_in_input label i {
+    border: 1px solid #625e6a;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_disabled {
+    background-color: #9eb5ef;
+    padding: 10px 15px;
+    border: none;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: not-allowed;
+}
+
+.button_not_disabled {
+    background-color: #3e6ae2;
+    padding: 10px 15px;
+    border: none;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.trouble_signin {
+    display: flex;
+    justify-content: center;
+}
+
+.trouble_signin h5 {
+    width: fit-content;
+    cursor: pointer;
+    border-bottom: 1px solid #000;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.decoration {
+    display: flex;
+    justify-content: center;
+    color: #625e6a;
+    font-weight: 400;
+}
+
+.create_acc_btn button {
+    background-color: #f4f4f4;
+    padding: 10px 15px;
+    border: none;
+    width: 100%;
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#register {
+    display: none;
+    width: 100%;
+    height: 100vh;
+}
+
+.form_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.register_form {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    gap: 30px;
+}
+
+.register_form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.register_form > div input {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f4f4f4;
+
+}
+
+.createAcc_btn button {
+    color: #fff;
+    font-size: 15px;
+    background-color: #3e6ae2;
+    border-radius: 40px;
+    border: 1px solid #373737;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.signInBtn {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signInBtn button {
+    border: 2px solid #f4f4f4;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #3e6ae2;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}

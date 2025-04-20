@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: #161616;
+}
+
+body {
+    position: relative;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.go_back_btn a {
+    position: absolute;
+    top: 85px;
+    left: 10px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px 40px;
+    border-radius: 40px;
+}
+
+.ferrari_navbar {
+    background: radial-gradient(circle, #121212, #161616);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.ferrari_logo {
+    height: 100%;
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.ferrari_logo img {
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+#ferrari_sect {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.ferrari_card {
+    width: 350px;
+    height: 550px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.ferrari_card:hover {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
+
+.ferrari_card_img {
+    width: 100%;
+    height: 235px;
+}
+
+.ferrari_card_img img {
+    width: 100% ;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.info {
+    width: 85%;
+    height: 315px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.car_name_year {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car_name_year h2 {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.car_name_year p {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}   
+
+.price button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.price button:hover {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.car_details_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.more_info button {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.favorite_icon {
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+
+}
