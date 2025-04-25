@@ -174,10 +174,6 @@
   background: #b50000;
 }
 
-#sell_car_btn {
-    behavior: smooth;
-}
-
 .carousel_wrapper_section {
     width: 100%;
     height: 600px;
@@ -187,13 +183,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
     width: 100%;
     height: 600px;
 }
 
 .carousel_track_wrapper {
-  width: 3000px;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -204,7 +199,7 @@
 }
 
 .product_1 {
-  width: 300px;
+  width: 270px;
   height: 450px;
   display: flex;
   justify-content: center;
@@ -400,12 +395,11 @@
 }
 
 .carousel_text_wrapper {
-    width: 200%;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: end;
     padding-bottom: 30px;
-
 }
 
 .carousel_text {
